@@ -1,0 +1,50 @@
+/* Website */
+.website{padding:0px; margin:0px; background:url(images/bg.png) repeat-x #FFFFFF;}
+.content {
+	padding: 10px;
+}
+
+/* Header */
+.logo {
+	width: 250px;
+	float:left;
+}
+.header {
+	height: 150px;
+}
+#baseline {
+	text-align: right;	
+	margin: 0;
+}
+
+/* Left */
+.rightPanel {
+	float: right;
+}
+
+.inputTextField {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-x-system-font:none;
+	background:#FFFFFF none repeat scroll 0 0;
+	border-color:#888888;
+	border-style:solid;
+	border-width:1px 1px 1px 1px;
+	font-size:13px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	margin:2px;
+	padding:6px;
+}
+
+/* Main body */
+.mainBody {
+	float:left;
+}
+#explanations {
+	
+}
