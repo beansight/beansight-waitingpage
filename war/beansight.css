@@ -1,5 +1,5 @@
 /*
-Palette
+Palette :
 dark
 #1B676B		A Dream In Color 
 #519548		A Dream in Green
@@ -7,41 +7,107 @@ dark
 #BEF202		A Dream In Grellow
 #EAFDE6		Dream Base
 light
+based on http://fr-fr.colourlovers.com/palette/871636/A_Dream_in_Color
+by http://fr-fr.colourlovers.com/lover/madmod001
+Thanks man !
+
+our light gray :
+#F6F6F6		Light Gray
+
+declinaison of dream base :
+#EAFDE6		Dream Base
+#d6e6d3		Dream Base gray
+#c2ccc0		Dream Base gray 2
+
 */
 
 body {
-	background-color:#1B676B;
+	background-color:#F6F6F6;
 	font-family:"Droid Sans","Myriad Pro","Sans";
 	font-size:14px;
 	line-height:1.5em;
-	color: #333333
+	color: #333333;
+	margin: 0;
 }
 
-a {color:#1B676B;}
+p {
+	margin: 0.2em 0;
+}
+
+a {text-decoration: none; color:#1B676B;}
 a:visited {text-decoration: none;}
 a:active {text-decoration: none;}
 a:hover {text-decoration: underline;}
 
-.wrapper {
-	background: url("images/bg-shine.png") no-repeat scroll center top transparent;
+#mainContainer {
+	-moz-box-shadow: 0 0 10px #519548;
+	-webkit-box-shadow: 0 0 10px #519548;
+	box-shadow: 0 0 10px #519548;
+	
+	background: url("images/bg-glow.png") no-repeat scroll left top transparent;
+	
+	padding: 3em 0 0;
+	background-color: #EAFDE6;
+	border-left: 7px solid #BEF202;
+	border-right: 7px solid #BEF202;
 }
 
 .content {
-	-moz-box-shadow: 0 0 50px #519548;
-	-webkit-box-shadow: 0 0 50px #519548;
-	box-shadow: 0 0 50px #519548;
+	-moz-border-radius-topright: 7px;
+	-webkit-border-top-right-radius: 7px;
+	border-top-right-radius: 7px;
+
+	-moz-border-radius-bottomleft: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+
+	border: 1px solid #BEF202;
 	
-	-moz-border-radius-topright: 70px;
-	-webkit-border-top-right-radius: 70px;
-	border-top-right-radius: 70px;
+	padding: 0.5em 1em;
+	background-color:	white;
+	margin-bottom: 2em;
+}
+
+#baseline {
+	font-family: 'Josefin Sans Std Light', arial, serif;
+	font-size:16px;
+	float:right;
+	color:#519548;
+	margin: 0;
+}
+
+#stayintouch {
+	font-family: 'Josefin Sans Std Light', arial, serif;
+	font-size:16px;
+}
+
+#header {
+	margin-bottom: 4em;
+}
+
+#contentContainer {
+	margin-bottom: 2em;
+}
+
+#footer {
+	padding: 2em 0 1em;
+	background-color: #d6e6d3;
+	color: #c2ccc0;
 	
-	-moz-border-radius-bottomleft: 70px;
-	-webkit-border-bottom-left-radius: 70px;
-	border-bottom-left-radius: 70px;
-	
-	padding: 4em 0;
-	background-color: #EAFDE6;
-	border: 5px solid #BEF202;
+	text-shadow: 0 1px 0 #FFFFFF;	
+}
+#footer ul {
+	margin: 0;
+}
+#footer li {
+	padding: 0 2em 0 0; 
+	list-style: none outside none;
+	float: left;
+}
+
+.beansight {
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size:2em;
 }
 
 /*  Experimental Title using CSS */
