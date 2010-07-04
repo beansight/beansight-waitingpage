@@ -1,50 +1,57 @@
-/* Website */
-.website{padding:0px; margin:0px; background:url(images/bg.png) repeat-x #FFFFFF;}
+/*
+Palette
+dark
+#1B676B		A Dream In Color 
+#519548		A Dream in Green
+#88C425		A Dream In Lime
+#BEF202		A Dream In Grellow
+#EAFDE6		Dream Base
+light
+*/
+
+body {
+	background-color:#1B676B;
+	font-family:"Droid Sans","Myriad Pro","Sans";
+	font-size:14px;
+	line-height:1.5em;
+	color: #333333
+}
+
+a {color:#1B676B;}
+a:visited {text-decoration: none;}
+a:active {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.wrapper {
+	background: url("images/bg-shine.png") no-repeat scroll center top transparent;
+}
+
 .content {
-	padding: 10px;
-}
-
-/* Header */
-.logo {
-	width: 250px;
-	float:left;
-}
-.header {
-	height: 150px;
-}
-#baseline {
-	text-align: right;	
-	margin: 0;
-}
-
-/* Left */
-.rightPanel {
-	float: right;
-}
-
-.inputTextField {
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	-x-system-font:none;
-	background:#FFFFFF none repeat scroll 0 0;
-	border-color:#888888;
-	border-style:solid;
-	border-width:1px 1px 1px 1px;
-	font-size:13px;
-	font-size-adjust:none;
-	font-stretch:normal;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-	line-height:normal;
-	margin:2px;
-	padding:6px;
-}
-
-/* Main body */
-.mainBody {
-	float:left;
-}
-#explanations {
+	-moz-box-shadow: 0 0 50px #519548;
+	-webkit-box-shadow: 0 0 50px #519548;
+	box-shadow: 0 0 50px #519548;
 	
+	-moz-border-radius-topright: 70px;
+	-webkit-border-top-right-radius: 70px;
+	border-top-right-radius: 70px;
+	
+	-moz-border-radius-bottomleft: 70px;
+	-webkit-border-bottom-left-radius: 70px;
+	border-bottom-left-radius: 70px;
+	
+	padding: 4em 0;
+	background-color: #EAFDE6;
+	border: 5px solid #BEF202;
+}
+
+/*  Experimental Title using CSS */
+h1.title {
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	font-size:5em;
+}
+#bean {
+	color: #88c425;
+}
+#sight {
+	color: #BEF202;
 }
