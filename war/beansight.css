@@ -1,5 +1,5 @@
 /*
-Palette :
+Original palette :
 dark
 #1B676B		A Dream In Color 
 #519548		A Dream in Green
@@ -14,7 +14,8 @@ Thanks man !
 our light gray :
 #F6F6F6		Light Gray
 
-declinaison of dream base :
+declinaison of Dream Base: (luminosity)
+#f4fcf2		Dream Base light
 #EAFDE6		Dream Base
 #d6e6d3		Dream Base gray
 #c2ccc0		Dream Base gray 2
@@ -47,7 +48,7 @@ a:hover {text-decoration: underline;}
 	background: url("images/bg-glow.png") no-repeat scroll left top transparent;
 	
 	padding: 3em 0 0;
-	background-color: #EAFDE6;
+	background-color: #f4fcf2;
 	border-left: 7px solid #BEF202;
 	border-right: 7px solid #BEF202;
 }
@@ -97,10 +98,12 @@ a:hover {text-decoration: underline;}
 	text-shadow: 0 1px 0 #FFFFFF;	
 }
 #footer ul {
-	margin: 0;
+	margin:0;
+	padding:0;
+
 }
 #footer li {
-	padding: 0 2em 0 0; 
+	padding: 0 1em 0 1.3em; 
 	list-style: none outside none;
 	float: left;
 }
@@ -108,6 +111,16 @@ a:hover {text-decoration: underline;}
 .beansight {
 	font-family: 'Yanone Kaffeesatz', arial, serif;
 	font-size:2em;
+}
+
+#footer #link-twitter {
+	background: url("images/icons/twitter_16.png") no-repeat left top transparent;
+}
+#footer #link-facebook {
+	background: url("images/icons/facebook_16.png") no-repeat left top transparent;
+}
+#footer #link-blog {
+	background: url("images/icons/rss_16.png") no-repeat left top transparent;
 }
 
 /*  Experimental Title using CSS */
