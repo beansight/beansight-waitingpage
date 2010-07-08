@@ -14,6 +14,7 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class Beansight_WaitingPage implements EntryPoint {
 
@@ -32,22 +33,28 @@ public class Beansight_WaitingPage implements EntryPoint {
 	public void onModuleLoad() {
 		// Set the window title, the header and powered by text, and the Add
 		// button text.
-		Window.setTitle(constants.sitename());
-		RootPanel.get("sitename").add(new Label(constants.sitename()));
+		//Window.setTitle(constants.sitename());
+		//RootPanel.get("sitename").add(new Label(constants.sitename()));
 
 		// Baseline
-		RootPanel.get("baseline").getElement().setInnerText("");
-		RootPanel.get("baseline").add(new Label(constants.baseline()));
+		//RootPanel.get("baseline").getElement().setInnerText("");
+		//RootPanel.get("baseline").add(new Label(constants.baseline()));
 
-		
 		addEmailTextbox.setStylePrimaryName("inputTextField");
 		
 		HorizontalPanel enterEmail = new HorizontalPanel();
 		enterEmail.add(addEmailTextbox);
 		enterEmail.add(addEmailButton);
-		enterEmail.add(addEmailConfirm);
-		RootPanel.get("enterEmail").add(enterEmail);
+		
+		VerticalPanel emailInputSystem = new VerticalPanel();
+		emailInputSystem.add(enterEmail);
+		emailInputSystem.add(addEmailConfirm);
+		
+		RootPanel.get("enterEmail").add(emailInputSystem);
 
+		// Move cursor focus to the input box.
+		addEmailTextbox.setFocus(true);
+		
 		addEmailButton.addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {

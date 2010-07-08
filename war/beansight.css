@@ -82,6 +82,11 @@ a:hover {text-decoration: underline;}
 	font-size:16px;
 }
 
+
+.inputTextField {
+	width:320px;	
+}
+
 #header {
 	margin-bottom: 4em;
 }
@@ -103,7 +108,7 @@ a:hover {text-decoration: underline;}
 
 }
 #footer li {
-	padding: 0 1em 0 1.3em; 
+	padding: 0 1em 0 1.5em; 
 	list-style: none outside none;
 	float: left;
 }
