@@ -80,14 +80,21 @@ public class Beansight_WaitingPage implements EntryPoint {
 		if (email.equals("")) {
 			return;
 		}
-
+		
+		addEmailButton.setEnabled(false);
+		addEmailTextbox.setEnabled(false);
+		
 		previsionService.addWaitingEmail(email, new AsyncCallback<Void>() {
 			public void onFailure(Throwable error) {
+				addEmailButton.setEnabled(true);
+				addEmailTextbox.setEnabled(true);
 			}
 
 			public void onSuccess(Void ignore) {
 				addEmailConfirm.setText("Thanks! We've got your e-mail.");
 				addEmailTextbox.setText("");
+				addEmailButton.setEnabled(true);
+				addEmailTextbox.setEnabled(true);
 			}
 		});
 
